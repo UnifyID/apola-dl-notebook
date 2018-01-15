@@ -6,6 +6,7 @@ MAINTAINER Andres Castaneda
 
 # Install git and iTorch dependencies
 RUN apt-get update && \
+    apt-get install sudo && \
     apt-get install -yq --no-install-recommends libboost-all-dev && \
     apt-get install -yqq software-properties-common \
     python-pip \
