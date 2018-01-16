@@ -76,6 +76,12 @@ ENV DYLD_LIBRARY_PATH=/root/torch/install/lib:$DYLD_LIBRARY_PATH
 ENV LIBRARY_PATH /usr/local/cuda/lib64/stubs:${LIBRARY_PATH}
 
 
+# Set up python 2.7 kernel
+ADD get-pip.py /
+RUN python2 /get-pip.py && \
+    python2 -m pip install ipykernel && \
+    python2 -m ipykernel install --user
+
 # Expose ports
 EXPOSE 8888
 
