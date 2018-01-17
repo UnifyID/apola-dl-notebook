@@ -2,7 +2,7 @@
 FROM tensorflow/tensorflow
 
 # File Author / Maintainer
-MAINTAINER Andres Castaneda
+MAINTAINER Lef Ioannidis
 
 # Install git and iTorch dependencies
 RUN apt-get update && \
