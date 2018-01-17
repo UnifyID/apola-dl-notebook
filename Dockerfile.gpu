@@ -2,7 +2,7 @@
 FROM tensorflow/tensorflow:1.1.0-gpu-py3
 
 # File Author / Maintainer
-MAINTAINER Andres Castaneda
+MAINTAINER Lef Ioannidis
 
 # Install cuda
 ENV CUDA_VERSION 8.0.61
